@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { NavLink } from 'react-router-dom';
 
 export const Admin = () => {
     const [isIncome, setIsIncome] = useState(true);
@@ -67,9 +68,27 @@ export const Admin = () => {
             }
             {/* Data Tracking, Time Report, Recent Finance */}
             <div className="flex flex-col">
-                <button>Data Tracking</button>
-                <button>Time Report</button>
-                <button>Recent Finance</button>
+                <NavLink
+                    className="flex-auto hover:bg-gray-400"
+                    activeClassName="bg-green-500"
+                    to="/admin/data-tracking"
+                    exact>
+                    Data Tracking
+                </NavLink>
+                <NavLink
+                    className="flex-auto hover:bg-gray-400"
+                    activeClassName="bg-green-500"
+                    to="/admin/time-report"
+                    exact>
+                    Time Report
+                </NavLink>
+                <NavLink
+                    className="flex-auto hover:bg-gray-400"
+                    activeClassName="bg-green-500"
+                    to="/admin/recent-finance"
+                    exact>
+                    Recent Finance
+                </NavLink>
             </div>
         </div>
     )
