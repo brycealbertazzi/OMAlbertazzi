@@ -12,6 +12,10 @@ import { TimeReport } from './components/admin/TimeReport';
 import { RecentFinance } from './components/admin/RecentFinance';
 import { NewsFeed } from './components/news/NewsFeed';
 import { RecentlyModifiedMatters } from './components/news/RecentlyModifiedMatters';
+import { TimeSlip } from './components/tabbar/TimeSlip';
+import { LogNote } from './components/tabbar/LogNote';
+import { Task } from './components/tabbar/Task';
+import { Details } from './components/tabbar/Details';
 
 const App = () => {
   return (
@@ -23,10 +27,13 @@ const App = () => {
                 <Switch>
                 {/* Home, Time Sheet, Task List, News, Admin */}
                     <Route exact path='/' component={Home}></Route>
-                    {/* Time Sheet Routes */}
+                    {/* Time Sheet & Task List Routes */}
                     <Route exact path='/time-sheet' component={TimeSheet}></Route>
-                    {/* Task List Routes */}
                     <Route exact path='/task-list' component={TaskList}></Route>
+                    <Route exact path='/time-slip' component={TimeSlip}></Route>
+                    <Route exact path='/log-note' component={LogNote}></Route>
+                    <Route exact path='/task' component={Task}></Route>
+                    <Route exact path='/details' component={Details}></Route>
                     {/* News Routes */}
                     <Route exact path='/news' component={News}></Route>
                     <Route exact path='/news/news-feed' component={NewsFeed}></Route>
@@ -37,6 +44,11 @@ const App = () => {
                     <Route exact path='/admin/time-report' component={TimeReport}></Route>
                     <Route exact path='/admin/recent-finance' component={RecentFinance}></Route>
                 </Switch>
+            </div>
+            <div className="flex justify-items-start mx-4 my-8">
+                <h6 className="">
+                    Copyright 2017 - Albertazzi Law Firm
+                </h6>
             </div>
         </Fragment>
       </Router>
