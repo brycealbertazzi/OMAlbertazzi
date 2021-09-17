@@ -3,10 +3,10 @@ import React, { Fragment } from 'react';
 import { Navbar } from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home } from './components/Home';
-import { TimeSheet } from './components/TimeSheet';
-import { TaskList } from './components/TaskList';
-import { News } from './components/News';
-import { Admin } from './components/Admin';
+import { TimeSheet } from './components/time-sheet/TimeSheet';
+import { TaskList } from './components/task-list/TaskList';
+import { News } from './components/news/News';
+import { Admin } from './components/admin/Admin';
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
       <Router>
         <Fragment>
             <Navbar></Navbar>
-            <div className="container">
+            <div>
                 <Switch>
                 {/* Home, Time Sheet, Task List, News, Admin */}
                     <Route exact path='/' component={Home}></Route>
