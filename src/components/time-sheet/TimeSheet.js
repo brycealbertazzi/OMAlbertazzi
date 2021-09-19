@@ -5,7 +5,9 @@ export const TimeSheet = () => {
     return (
         <div>
             <h1 className="text-3xl">Time Sheet</h1>
-            <Tabbar></Tabbar>
+            <div className="flex justify-center">
+                <Tabbar></Tabbar>
+            </div>
             <div className="flex flex-col md:flex-row gap-3 justify-center items-center">
                 <button className="flex-auto w-28 btn btn-weekday">Sunday</button>
                 <button className="flex-auto w-28 btn btn-weekday">Monday</button>

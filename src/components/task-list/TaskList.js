@@ -5,7 +5,9 @@ export const TaskList = () => {
     return (
         <div>
             <h1 className="text-3xl">Task List</h1>
-            <Tabbar></Tabbar>
+            <div className="flex justify-center">
+                <Tabbar></Tabbar>
+            </div>
             <div className="flex"></div>
             <button className="flex-auto hover:bg-blue-500">
                 Show Task List For:

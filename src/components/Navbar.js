@@ -7,7 +7,7 @@ export const Navbar = () => {
         <div className="flex mx-3 my-8 py-4 gap-4 border-b-2">
             <NavLink
                 className="flex-auto btn btn-main"
-                activeClassName="bg-green-500"
+                activeClassName="text-black"
                 to="/"
                 exact
             >
@@ -15,7 +15,7 @@ export const Navbar = () => {
             </NavLink>
             <NavLink
                 className="flex-auto btn btn-main"
-                activeClassName="bg-green-500"
+                activeClassName="text-black"
                 to="/time-sheet"
                 exact
             >
@@ -23,7 +23,7 @@ export const Navbar = () => {
             </NavLink>
             <NavLink
                 className="flex-auto btn btn-main"
-                activeClassName="bg-green-500"
+                activeClassName="text-black"
                 to="/task-list"
                 exact
             >
@@ -31,7 +31,7 @@ export const Navbar = () => {
             </NavLink>
             <NavLink
                 className="flex-auto btn btn-main"
-                activeClassName="bg-green-500"
+                activeClassName="text-black"
                 to="/news"
                 exact
             >
@@ -39,7 +39,7 @@ export const Navbar = () => {
             </NavLink>
             <NavLink
                 className="flex-auto btn btn-main"
-                activeClassName="bg-green-500"
+                activeClassName="text-black"
                 to="/admin"
                 exact
             >

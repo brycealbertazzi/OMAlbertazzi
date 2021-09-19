@@ -4,7 +4,9 @@ import { Tabbar } from './tabbar/Tabbar'
 export const Home = () => {
     return (
         <div>
-            <Tabbar></Tabbar>
+            <div className="flex justify-center">
+                <Tabbar></Tabbar>
+            </div>
             <div className="flex gap-8 my-8">
                 <button className="flex-auto btn btn-main">Contact Search</button>
                 <button className="flex-auto btn btn-main">Matter Search</button>
