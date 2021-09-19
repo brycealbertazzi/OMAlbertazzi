@@ -6,7 +6,7 @@ export const Admin = () => {
 
     return (
         <div>
-            <h1 className="my-4">Admin Reports</h1>
+            <h1 className="my-4 text-3xl">Admin Reports</h1>
             <div className="tabs flex justify-items-center my-3">
                 <button className="flex-1 hover:bg-blue-300 border border-gray-600" onClick={() => setIsIncome(true)}>Income</button>
                 <button className="flex-1 hover:bg-blue-300 border border-gray-600" onClick={() => setIsIncome(false)}>Time Totals</button>

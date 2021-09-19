@@ -3,3 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    background-color: #444;
+}
+
+.OMAlbertazzi {
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    @apply shadow-md py-3 px-4 rounded-md transition duration-300 cursor-pointer
+}
+
+.btn-main {
+    @apply bg-button-main hover:bg-button-main-hover hover:text-black
+}
+
+.btn-tabbar {
+    @apply bg-button-tabbar hover:bg-button-tabbar-hover hover:text-black
+}
+
+.btn-weekday {
+    @apply bg-yellow-600 hover:bg-yellow-400 hover:text-black
+}

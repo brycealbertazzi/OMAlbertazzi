@@ -4,7 +4,7 @@ import { Tabbar } from '../tabbar/Tabbar'
 export const TaskList = () => {
     return (
         <div>
-            <h1>Task List</h1>
+            <h1 className="text-3xl">Task List</h1>
             <Tabbar></Tabbar>
             <div className="flex"></div>
             <button className="flex-auto hover:bg-blue-500">

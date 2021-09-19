@@ -1,5 +1,4 @@
-import './App.css';
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Navbar } from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home } from './components/Home';
@@ -19,9 +18,8 @@ import { Details } from './components/tabbar/Details';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="OMAlbertazzi container">
       <Router>
-        <Fragment>
             <Navbar></Navbar>
             <div>
                 <Switch>
@@ -46,11 +44,10 @@ const App = () => {
                 </Switch>
             </div>
             <div className="flex justify-items-start mx-4 my-8">
-                <h6 className="">
+                <h6 className="text-sm">
                     Copyright 2017 - Albertazzi Law Firm
                 </h6>
             </div>
-        </Fragment>
       </Router>
     </div>
   );
