@@ -46,7 +46,7 @@ const App = () => {
                     <Route exact path='/admin/recent-finance' component={RecentFinance}></Route>
                 </Switch>
             </div>
-            <div className="flex justify-items-start mx-4 my-8">
+            <div className="flex justify-items-start mx-4 my-8 pt-8 border-t border-solid border-white">
                 <h6 className="text-sm">
                     Copyright 2017 - Albertazzi Law Firm
                 </h6>

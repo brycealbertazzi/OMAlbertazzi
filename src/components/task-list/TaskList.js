@@ -9,7 +9,7 @@ export const TaskList = () => {
                 <Tabbar></Tabbar>
             </div>
             <div className="flex"></div>
-            <button className="flex-auto hover:bg-blue-500">
+            <button className="flex-auto btn btn-regular">
                 Show Task List For:
             </button>
             

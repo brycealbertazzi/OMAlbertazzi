@@ -2,8 +2,8 @@ import React from 'react'
 
 export const DataTracking = () => {
     return (
-        <div>
-            <h1>Data Tracking Works!</h1>
+        <div className="flex items-center">
+            <h1 className="flex-auto text-3xl">Tracking Log</h1>
         </div>
     )
 }

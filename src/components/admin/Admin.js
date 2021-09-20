@@ -6,13 +6,13 @@ export const Admin = () => {
 
     return (
         <div>
-            <h1 className="my-4 text-3xl">Admin Reports</h1>
-            <div className="tabs flex justify-items-center my-3">
-                <button className="flex-1 hover:bg-blue-300 border border-gray-600" onClick={() => setIsIncome(true)}>Income</button>
-                <button className="flex-1 hover:bg-blue-300 border border-gray-600" onClick={() => setIsIncome(false)}>Time Totals</button>
+            <h1 className="my-8 text-3xl">Admin Reports</h1>
+            <div className="tabs flex flex-col sm:flex-row my-3 gap-x-8 gap-y-4 sm:px-10 md:px-20 lg:px-30 xl:px-40">
+                <button className="flex-auto btn btn-regular" onClick={() => setIsIncome(true)}>Income</button>
+                <button className="flex-auto btn btn-regular" onClick={() => setIsIncome(false)}>Time Totals</button>
             </div>
             {isIncome ?
-            <table className="table-fixed flex border-separate border border-gray-300">
+            <table className="table-fixed flex border-separate border border-gray-300 text-lg my-12">
                 <tbody className="flex-auto border border-gray-500">
                     <tr className="flex">
                         <td className="flex-auto w-3/4">Today</td>
@@ -49,7 +49,7 @@ export const Admin = () => {
                 </tbody>
             </table>
             :
-            <table className="flex flex-col table-fixed border border-gray-300">
+            <table className="flex flex-col table-fixed border border-gray-300 text-lg my-12">
                 <thead className="flex-auto">
                     <tr className="flex">
                         <th className="flex-auto">Date</th>
@@ -67,24 +67,24 @@ export const Admin = () => {
             </table>
             }
             {/* Data Tracking, Time Report, Recent Finance */}
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-4 items-center mt-8">
                 <NavLink
-                    className="flex-auto hover:bg-gray-400"
-                    activeClassName="bg-green-500"
+                    className="flex-auto btn btn-regular w-1/2"
+                    activeClassName=""
                     to="/admin/data-tracking"
                     exact>
                     Data Tracking
                 </NavLink>
                 <NavLink
-                    className="flex-auto hover:bg-gray-400"
-                    activeClassName="bg-green-500"
+                    className="flex-auto btn btn-regular w-1/2"
+                    activeClassName=""
                     to="/admin/time-report"
                     exact>
                     Time Report
                 </NavLink>
                 <NavLink
-                    className="flex-auto hover:bg-gray-400"
-                    activeClassName="bg-green-500"
+                    className="flex-auto btn btn-regular w-1/2"
+                    activeClassName=""
                     to="/admin/recent-finance"
                     exact>
                     Recent Finance

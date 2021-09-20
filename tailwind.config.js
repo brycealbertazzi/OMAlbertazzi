@@ -8,7 +8,9 @@ module.exports = {
             "button-main": "#2eb379",
             "button-main-hover": "#30f291",
             "button-tabbar": "#2ea3b3",
-            "button-tabbar-hover": "#30f2e9"
+            "button-tabbar-hover": "#30f2e9",
+            "button-regular": "#188c3f",
+            "button-regular-hover": "#21bf55"
         }
     },
     container: {

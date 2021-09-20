@@ -24,6 +24,10 @@
     @apply bg-button-tabbar hover:bg-button-tabbar-hover hover:text-black
 }
 
+.btn-regular {
+    @apply bg-button-regular hover:bg-button-regular-hover hover:text-black
+}
+
 .btn-weekday {
     @apply bg-yellow-600 hover:bg-yellow-400 hover:text-black
 }

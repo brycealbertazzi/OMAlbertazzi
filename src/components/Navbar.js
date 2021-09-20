@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export const Navbar = () => {
     // Home, Time Sheet, Task List, News, Admin
     return (
-        <div className="flex mx-3 my-8 py-4 gap-4 border-b-2">
+        <div className="flex mx-3 my-8 py-4 gap-4 border-b-2 border-dashed border-yellow-200 text-lg">
             <NavLink
                 className="flex-auto btn btn-main"
                 activeClassName="text-black"

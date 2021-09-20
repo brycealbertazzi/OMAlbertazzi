@@ -2,8 +2,8 @@ import React from 'react'
 
 export const RecentlyModifiedMatters = () => {
     return (
-        <div>
-            <h1>Recently Modified Matters Works!</h1>
+        <div className="flex items-center">
+            <h1 className="flex-auto text-3xl">Recently Modified Matters</h1>
         </div>
     )
 }
